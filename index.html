@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"
+      integrity="sha512-4UKI/XKm3xrvJ6pZS5oTRvIQGIzZFoXR71rRBb1y2N+PbwAsKa5tPl2J6WvbEvwN3TxQCm8hMzsl/pO+82iRlg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body
+    class="bg-gradient-to-r from-green-500 to-green-200 p-10 flex flex-col justify-center items-center"
+  >
+    <div class="bg-white flex flex-col justify-center items-center text-center">
+      <h1 id="title" class="text-green-600 font-extrabold text-3xl">
+        USA Education Data
+      </h1>
+      <h2 id="description" class="text-green-600 font-bold">
+        Percentage of adults age 25 and older with a bachelor's degree or higher
+        (2010-2014)
+      </h2>
+      <svg id="map" class="bg-slate-100"></svg>
+      <svg id="legend" class="bg-slate-100"></svg>
+    </div>
+
+    <div
+      id="tooltip"
+      class="bg-black/60 text-white relative h-[90px] w-[130px] p-2 rounded-md text-center items-center"
+    ></div>
+    <script src="/src/index.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
